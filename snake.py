@@ -1,6 +1,6 @@
 from turtle import Turtle, Screen
 screen = Screen()
-NUM_OF_SNAKES = 6
+NUM_OF_SNAKES = 3
 MOVEMENT_SPEED = 20
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 
@@ -9,7 +9,6 @@ class Snake:
 
     def __init__(self):
         super().__init__()
-        # self.num_of_snakes = 3
         self.x_pos = 20
         self.snakes = []
         self.create_snake()
