@@ -26,19 +26,8 @@ class Scoreboard(Turtle):
             self.high_score = self.score
             with open("data.txt", mode="w") as data:
                 data.write(f"{self.high_score}")
-            # with open("data.txt", mode="w") as h_s:
-            #     h_s.write(str(self.high_score))
-            # with open("data.txt", mode="r") as data:
-            #     high = data.read()
-            # self.high_score = high
         self.score = 0
         self.show_score()
-
-    # def game_over(self):
-    #     self.goto(0, 0)
-    #     self.write("Game Over", align=ALIGNMENT, font=FONT)
-    #     self.goto(x=0, y=-40)
-    #     self.write(f"Final score: {self.score}", align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
         self.score += 1
